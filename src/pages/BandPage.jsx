@@ -1,16 +1,18 @@
 // src/pages/BandPage.jsx
 import { useParams } from "react-router-dom";
 import roster from "../data/roster";
-import BandsintownWidget from "../components/BandsintownWidget";
 import { useEffect } from "react";
 
 export default function BandPage() {
   const { bandSlug } = useParams();
-  const band = roster.find(b => b.slug === bandSlug);
+  const band = roster.find(
+    (b) => b.slug?.toLowerCase() === bandSlug.toLowerCase()
+  );
 
   useEffect(() => {
-    // Cleanup previous Songkick scripts
-    document.querySelectorAll(`script[src*="widget-app.songkick.com"]`).forEach(s => s.remove());
+    document
+      .querySelectorAll(`script[src*="widget-app.songkick.com"]`)
+      .forEach((s) => s.remove());
 
     if (band?.songkickId) {
       const script = document.createElement("script");
@@ -54,7 +56,11 @@ export default function BandPage() {
               </a>
             )}
             {band.socials?.bandsintown && (
-              <a href={band.socials.bandsintown} target="_blank" rel="noreferrer">
+              <a
+                href={band.socials.bandsintown}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fas fa-ticket-alt" />
               </a>
             )}
@@ -95,16 +101,17 @@ export default function BandPage() {
         )}
       </div>
 
-      {/* Tour Widgets */}
+      {/* Bandsintown widget */}
       {band.bandsintownId && (
-  <iframe
-    src={`/widgets/bandsintown.html?id=${band.bandsintownId}`}
-    title="Bandsintown Widget"
-    className="w-full h-[480px] rounded bg-white mt-8"
-    frameBorder="0"
-  ></iframe>
-)}
+        <iframe
+          src={`/widgets/bandsintown.html?id=${band.bandsintownId}`}
+          title="Bandsintown Widget"
+          className="w-full h-[480px] rounded bg-white mt-8"
+          frameBorder="0"
+        />
+      )}
 
+      {/* Songkick widget */}
       {band.songkickId && (
         <div
           className="mt-6"
