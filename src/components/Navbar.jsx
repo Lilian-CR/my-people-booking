@@ -1,7 +1,11 @@
+// src/components/Navbar.jsx
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo.png"; // Ensure this path is correct
+import logo from "../images/logo.png";
 
 export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const menu = [
     { label: "HOME", to: "/" },
     { label: "ROSTER", to: "/roster" },
@@ -11,8 +15,9 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="bg-primary border-b py-3">
-      <div className="max-w-6xl mx-auto px-4 flex flex-wrap items-center justify-between">
+    <header className="bg-primary border-b sticky top-0 z-50">
+      <nav className="relative max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
+        
         {/* Logo (left) */}
         <Link to="/" className="flex-shrink-0">
           <img
@@ -22,22 +27,43 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Menu (right) */}
-        <nav className="flex-1">
-          <ul className="flex flex-wrap justify-end gap-3 text-[10px] sm:text-xs md:text-sm font-bold text-accentYellow uppercase tracking-wide">
-            {menu.map((item) => (
-              <li key={item.label}>
-                <Link
-                  to={item.to}
-                  className="hover:text-white transition-colors"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
+        {/* Desktop Nav - Centered */}
+        <div className="hidden md:flex gap-14 font-bold text-xs uppercase text-accentYellow absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+          {menu.map((item) => (
+            <Link
+              key={item.label}
+              to={item.to}
+              className="hover:text-white transition-colors"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Hamburger Icon - Right on Mobile */}
+        <button
+          className="md:hidden text-xl ml-auto text-accentYellow"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          ☰
+        </button>
+      </nav>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-primary px-4 pb-4 flex flex-col gap-4 text-right font-bold text-sm uppercase items-end text-accentYellow">
+          {menu.map((item) => (
+            <Link
+              key={item.label}
+              to={item.to}
+              className="hover:text-white transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
     </header>
   );
 }
