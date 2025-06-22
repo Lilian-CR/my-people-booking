@@ -62,7 +62,7 @@ const roster = [
   {
     id: 5,
     name: "ÁSPERØ",
-    slug: "asperø",
+    slug: "aspero",
     image: "/images/AASPERØ.jpg",
     video: "https://www.youtube.com/embed/pgO7IRQOd34",
     pressKit: "https://www.dropbox.com/scl/fo/zd18l8moivz3z58jdzsa8/AEsKy9A4J8FdX2DSzPIMYUQ?rlkey=9rk5q6xistz74mli149hcme8p&e=1&st=hyb6rlap&",
