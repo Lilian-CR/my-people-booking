@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-primary text-black text-sm py-2 px-4">
+      <footer className="bg-primary text-white text-sm py-2 px-4">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center">
           {/* Social Icons */}
           <div className="flex gap-4 text-lg">
