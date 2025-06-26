@@ -51,12 +51,12 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-primary px-4 pb-4 flex flex-col gap-4 text-right font-bold text-sm uppercase items-end text-accentYellow">
+        <div className="md:hidden bg-primary px-4 pb-4 flex flex-col gap-4 text-right font-bold text-sm uppercase items-end text-white">
           {menu.map((item) => (
             <Link
               key={item.label}
               to={item.to}
-              className="hover:text-white transition"
+              className="hover:text-black transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.label}
