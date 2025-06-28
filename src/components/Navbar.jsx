@@ -28,12 +28,12 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav - Centered */}
-        <div className="hidden md:flex gap-14 font-bold text-xs uppercase text-accentYellow absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+        <div className="hidden md:flex gap-14 font-bold text-xs uppercase text-white absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap">
           {menu.map((item) => (
             <Link
               key={item.label}
               to={item.to}
-              className="hover:text-white transition-colors"
+              className="hover:text-black transition-colors"
             >
               {item.label}
             </Link>
@@ -51,7 +51,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-  <div className="md:hidden fixed top-0 right-0 h-1/3 w-1/2 bg-primary bg-opacity-90 backdrop-blur-sm p-6 flex flex-col gap-6 text-right font-bold text-sm uppercase items-end z-50">
+  <div className="md:hidden fixed top-0 right-0 h-1/3 w-1/2 bg-primary bg-opacity-90 backdrop-blur-sm p-6 flex flex-col gap-6 text-right font-bold text-sm uppercase text-white items-end z-50">
     {menu.map((item) => (
       <Link
         key={item.label}
