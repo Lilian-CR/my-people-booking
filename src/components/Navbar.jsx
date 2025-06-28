@@ -42,7 +42,7 @@ export default function Navbar() {
 
         {/* Hamburger Icon - Right on Mobile */}
         <button
-          className="md:hidden text-xl ml-auto text-accentYellow"
+          className="md:hidden text-xl ml-auto text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           ☰
