@@ -51,19 +51,19 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-primary px-4 pb-4 flex flex-col gap-4 text-right font-bold text-sm uppercase items-end text-white">
-          {menu.map((item) => (
-            <Link
-              key={item.label}
-              to={item.to}
-              className="hover:text-black transition"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
-      )}
+  <div className="md:hidden fixed top-0 right-0 h-full w-1/2 bg-primary bg-opacity-50 backdrop-blur-sm p-6 flex flex-col gap-6 text-right font-bold text-sm uppercase items-end z-50">
+    {menu.map((item) => (
+      <Link
+        key={item.label}
+        to={item.to}
+        className="hover:text-black transition"
+        onClick={() => setMobileMenuOpen(false)}
+      >
+        {item.label}
+      </Link>
+    ))}
+  </div>
+)}
     </header>
   );
 }
