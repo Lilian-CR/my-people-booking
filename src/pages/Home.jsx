@@ -24,8 +24,8 @@ export default function Home() {
 
   return (
     <div className="bg-white h-[calc(100vh-64px-48px)] overflow-hidden">
- {/* Adjust heights if needed */}
-      <div className="w-full h-full">
+      {/* Desktop Slider */}
+      <div className="hidden md:block w-full h-full">
         <div className="w-full h-full overflow-hidden">
           <div
             className="flex transition-transform duration-1000 ease-in-out h-full"
@@ -48,6 +48,15 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Mobile Collage */}
+      <div className="block md:hidden w-full h-full">
+        <img
+          src="/images/Mobile-Hero.jpg"
+          alt="Mobile Collage"
+          className="object-cover w-full h-full"
+        />
       </div>
     </div>
   );
