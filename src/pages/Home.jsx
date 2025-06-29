@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 const rosterImages = [
   "/images/roster1.jpg",
   "/images/roster2.jpg",
+  "/images/contact-band.jpg",
   "/images/roster3.jpg",
   "/images/roster4.jpg",
   "/images/roster5.jpg",
