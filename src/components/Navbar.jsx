@@ -5,7 +5,7 @@ import LegalModal from "./LegalModal";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [openModal, setOpenModal] = useState(null); // "imprint" or "data"
+  const [openModal, setOpenModal] = useState(null); // 'imprint' or 'data'
 
   const menu = [
     { label: "HOME", to: "/" },
@@ -15,23 +15,20 @@ export default function Navbar() {
     { label: "CONTACT", to: "/contact" },
   ];
 
-  const closeModal = () => setOpenModal(null);
-
   return (
     <header className="bg-primary border-b sticky top-0 z-50">
       <nav className="relative max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
-
-        {/* Left: Social Icons (mobile only) */}
+        {/* Socials for mobile */}
         <div className="md:hidden flex gap-3 text-white text-xl">
-          <a href="https://www.facebook.com/mypeoplebooking" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <a href="https://www.facebook.com/mypeoplebooking" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook" />
           </a>
-          <a href="https://www.instagram.com/mypeoplebooking" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://www.instagram.com/mypeoplebooking" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram" />
           </a>
         </div>
 
-        {/* Logo (desktop only) */}
+        {/* Logo for desktop */}
         <Link to="/" className="hidden md:flex flex-shrink-0">
           <img
             src="/images/logo.png"
@@ -40,7 +37,7 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Desktop Menu */}
+        {/* Desktop Nav */}
         <div className="hidden md:flex gap-14 font-bold text-xs uppercase text-white absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap">
           {menu.map((item) => (
             <Link
@@ -53,7 +50,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Hamburger icon */}
+        {/* Hamburger Icon */}
         <button
           className="md:hidden text-xl ml-auto text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -64,7 +61,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed top-0 right-0 h-fit w-2/3 bg-primary bg-opacity-95 p-6 flex flex-col gap-5 text-right font-bold text-sm uppercase text-white rounded-bl-lg items-end z-50 shadow-xl">
+        <div className="md:hidden fixed top-0 right-0 h-2/3 w-2/3 bg-primary bg-opacity-95 p-6 flex flex-col gap-5 text-right font-bold text-sm uppercase text-white rounded-bl-lg items-end z-50 shadow-xl">
           {menu.map((item) => (
             <Link
               key={item.label}
@@ -96,68 +93,9 @@ export default function Navbar() {
         </div>
       )}
 
-      {/* Legal Modals */}
-      {openModal === "imprint" && (
-        <LegalModal
-          title="IMPRINT"
-          content={
-            <>
-              <p><strong>MY PEOPLE BOOKING</strong> is organised by a civil person, and it's not (yet) a registered business.</p>
-              <p><strong>L.C. Rodrigues</strong><br />
-                10249 - Berlin<br />
-                Email: mypeoplebooking @ gmail . com<br />
-                Web: www.mypeoplebooking.net</p>
-              <p><strong>Content responsibility:</strong><br />
-                L.C. Rodrigues - mypeoplebooking @ gmail . com</p>
-            </>
-          }
-          onClose={closeModal}
-        />
-      )}
-
-      {openModal === "data" && (
-        <LegalModal
-          title="DATA PROTECTION"
-          content={
-            <>
-              <p>In this data protection declaration we inform you about the processing of personal data when using this website.</p>
-
-              <p><strong>Responsible for data processing:</strong><br />
-              L. C. Rodrigues<br />
-              10249 Berlin<br />
-              Email: mypeoplebooking @ gmail . com</p>
-
-              <p>Personal data is any information relating to an identified or identifiable natural person. An identifiable person can be identified, directly or indirectly, particularly by reference to a name, ID number, location data, online identifier, or one or more features relating to their identity.</p>
-
-              <p><strong>Data when the website is accessed:</strong> If you use this website for information only, we only process the data required to display the site on your device. These include:</p>
-              <ul className="list-disc list-inside text-left">
-                <li>IP address</li>
-                <li>Date and time of the request</li>
-                <li>Amount of data transferred</li>
-                <li>Website from which the request originated</li>
-                <li>Browser type and version</li>
-                <li>Operating system</li>
-              </ul>
-
-              <p>The legal basis for processing is our legitimate interest according to Article 6(1)(f) GDPR to enable website functionality.</p>
-
-              <p><strong>Your rights:</strong></p>
-              <ul className="list-disc list-inside text-left">
-                <li>Right to access (Art. 15 GDPR)</li>
-                <li>Right to rectification (Art. 16 GDPR)</li>
-                <li>Right to erasure (Art. 17 GDPR)</li>
-                <li>Right to restrict processing (Art. 18 GDPR)</li>
-                <li>Right to data portability (Art. 20 GDPR)</li>
-                <li>Right to object to processing (Art. 21 GDPR)</li>
-                <li>Right not to be subject to automated decisions (Art. 22 GDPR)</li>
-                <li>Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)</li>
-              </ul>
-
-              <p className="text-xs"><em>Source: Sample data protection declaration from anwalt.de</em></p>
-            </>
-          }
-          onClose={closeModal}
-        />
+      {/* Modal Renderer */}
+      {openModal && (
+        <LegalModal type={openModal} onClose={() => setOpenModal(null)} />
       )}
     </header>
   );
