@@ -3,8 +3,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#3C6760',         // exact green from logo
-        accentYellow: '#fbe647',    // yellow from your logo / navbar
+        primary: '#3C6760',         // Green from logo
         mutedGray: '#595959',
         lightBorder: '#a6a6a6',
         contrastHover: '#ededed',
