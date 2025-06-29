@@ -50,13 +50,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Mobile Collage */}
-      <div className="block md:hidden w-full h-full">
-        <img
-          src="/images/Mobile-Hero.jpg"
-          alt="Mobile Collage"
-          className="object-cover w-full h-full"
-        />
+      {/* Mobile Hero Pic */}
+      <img
+  src="/images/Mobile-Hero.jpg"
+  alt="Mobile Hero"
+  className="block md:hidden h-full w-auto object-contain mx-auto"
+/>
       </div>
     </div>
   );
