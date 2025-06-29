@@ -52,11 +52,10 @@ export default function Home() {
 
       {/* Mobile Hero Pic */}
       <img
-  src="/images/Mobile-Hero.jpg"
-  alt="Mobile Hero"
-  className="block md:hidden h-full w-auto object-contain mx-auto"
-/>
-      </div>
+        src="/images/Mobile-Hero.jpg"
+        alt="Mobile Hero"
+        className="block md:hidden h-full w-auto object-contain mx-auto"
+      />
     </div>
   );
 }
