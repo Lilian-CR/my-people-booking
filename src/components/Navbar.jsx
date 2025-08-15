@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import LegalModal from "./LegalModal";
@@ -18,18 +17,31 @@ export default function Navbar() {
   return (
     <header className="bg-primary border-b sticky top-0 z-50">
       <nav className="relative max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
-        {/* Socials for mobile */}
+        {/* Socials for mobile (left) */}
         <div className="md:hidden flex gap-3 text-white text-xl">
-          <a href="https://www.facebook.com/mypeoplebooking" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/mypeoplebooking" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <i className="fab fa-facebook" />
           </a>
-          <a href="https://www.instagram.com/mypeoplebooking" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/mypeoplebooking" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <i className="fab fa-instagram" />
           </a>
         </div>
 
-        {/* Logo for desktop */}
-        <Link to="/" className="hidden md:flex flex-shrink-0">
+        {/* MOBILE LOGO */}
+        <Link
+          to="/"
+          className="md:hidden absolute left-1/2 -translate-x-1/2"
+          aria-label="My People Booking - Home"
+        >
+          <img
+            src="/images/logo.png"
+            alt="My People Booking Logo"
+            className="h-8 object-contain"
+          />
+        </Link>
+
+        {/* Logo for desktop*/}
+        <Link to="/" className="hidden md:flex flex-shrink-0" aria-label="My People Booking - Home">
           <img
             src="/images/logo.png"
             alt="My People Booking Logo"
@@ -37,7 +49,7 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Desktop Nav */}
+        {/* Desktop Nav*/}
         <div className="hidden md:flex gap-14 font-bold text-xs uppercase text-white absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap">
           {menu.map((item) => (
             <Link
@@ -50,10 +62,13 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Hamburger Icon */}
+        {/* Hamburger Icon- Mobile) */}
         <button
           className="md:hidden text-xl ml-auto text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-menu"
         >
           ☰
         </button>
@@ -61,7 +76,10 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed top-0 right-0 h-2/3 w-2/3 bg-primary bg-opacity-95 p-6 flex flex-col gap-5 text-right font-bold text-sm uppercase text-white rounded-bl-lg items-end z-50 shadow-xl">
+        <div
+          id="mobile-menu"
+          className="md:hidden fixed top-0 right-0 h-2/3 w-2/3 bg-primary bg-opacity-95 p-6 flex flex-col gap-5 text-right font-bold text-sm uppercase text-white rounded-bl-lg items-end z-50 shadow-xl"
+        >
           {menu.map((item) => (
             <Link
               key={item.label}
