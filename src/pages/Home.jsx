@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 const desktopRosterImages = [
   "/images/roster1.jpg",
   "/images/roster2.jpg",
-  "/images/contact-band.jpg",
   "/images/roster3.jpg",
   "/images/roster4.jpg",
   "/images/roster5.jpg",
@@ -142,3 +141,4 @@ export default function Home() {
     </main>
   );
 }
+
