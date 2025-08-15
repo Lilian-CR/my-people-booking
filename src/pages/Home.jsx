@@ -23,39 +23,40 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-white h-[calc(100vh-64px-48px)] overflow-hidden">
-      {/* Desktop Slider */}
-      <div className="hidden md:block w-full h-full">
-        <div className="w-full h-full overflow-hidden">
-          <div
-            className="flex transition-transform duration-1000 ease-in-out h-full"
-            style={{
-              width: `${rosterImages.length * 100}%`,
-              transform: `translateX(-${index * (100 / rosterImages.length)}%)`,
-            }}
-          >
-            {rosterImages.map((img, i) => (
-              <img
-                key={i}
-                src={img}
-                alt={`Roster ${i + 1}`}
-                className="object-cover w-full h-full"
-                style={{
-                  width: `${100 / rosterImages.length}%`,
-                  flexShrink: 0,
-                }}
-              />
-            ))}
-          </div>
+  <div className="h-[calc(100vh-56px-48px)] overflow-hidden"> {/* 56px nav + 48px footer */}
+    {/* Desktop Slider */}
+    <div className="hidden md:block w-full h-full">
+      <div className="w-full h-full overflow-hidden">
+        <div
+          className="flex transition-transform duration-1000 ease-in-out h-full"
+          style={{
+            width: `${rosterImages.length * 100}%`,
+            transform: `translateX(-${index * (100 / rosterImages.length)}%)`,
+          }}
+        >
+          {rosterImages.map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              alt={`Roster ${i + 1}`}
+              className="object-cover w-full h-full"
+              style={{
+                width: `${100 / rosterImages.length}%`,
+                flexShrink: 0,
+              }}
+            />
+          ))}
         </div>
       </div>
-
-      {/* Mobile Hero Pic */}
-      <img
-        src="/images/Mobile-Hero.jpg"
-        alt="Mobile Hero"
-        className="block md:hidden h-full w-auto object-contain mx-auto"
-      />
     </div>
-  );
+
+    {/* Mobile Hero Pic */}
+    <img
+      src="/images/Mobile-Hero.jpg"
+      alt="Mobile Hero"
+      className="block md:hidden h-full w-full object-cover"  // <- cover, no white bars
+    />
+  </div>
+);
 }
+
