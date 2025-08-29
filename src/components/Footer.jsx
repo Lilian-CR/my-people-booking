@@ -41,8 +41,7 @@ export default function Footer() {
           )}
 
           {/* Copyright (always shown) */}
-          <div className="text-xs mx-auto">MY PEOPLE BOOKING - ©2025</div>
-
+          <div className="text-xs mx-auto"> MY PEOPLE BOOKING - ©{new Date().getFullYear()} </div>
           {/* Desktop only: Legal Links */}
           {!isMobile && (
             <div className="flex gap-4 text-xs">
