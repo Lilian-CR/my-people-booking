@@ -3,7 +3,7 @@ export default function Concerts() {
     <div className="bg-white py-12 px-6">
       <div className="max-w-4xl mx-auto text-black">
         {/* Top Main Image - centered */}
-        <div className="flex justify-center mb-8">
+        <div className="mb-8">
   <a
     href="/images/TAG-DER-CLUBKULTUR-2025-MyPeopleBooking-A4.jpg"
     target="_blank"
@@ -12,7 +12,7 @@ export default function Concerts() {
     <img
       src="/images/TAG-DER-CLUBKULTUR-2025-MyPeopleBooking-A4.jpg"
       alt="Bridges of Noise & Care Flyer"
-      className="w-1/4 rounded shadow-lg hover:opacity-90 transition"
+      className="w-1/3 mx-auto rounded shadow-lg hover:opacity-90 transition"
     />
   </a>
 </div>
@@ -36,7 +36,7 @@ export default function Concerts() {
             <h3 className="text-xl font-bold mb-2">Line-up / Programme</h3>
             <ul className="list-disc list-inside space-y-2">
               <li>
-                <strong>Split Milk</strong> – punk/hardcore (FLINTA*){" "}
+                <strong>Split Milk</strong> – emo/pop punk (FLINTA*){" "}
                 <a
                   href="https://splitmilk.bandcamp.com/"
                   target="_blank"
