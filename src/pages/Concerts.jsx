@@ -17,28 +17,19 @@ export default function Concerts() {
   </a>
 </div>
 
-        {/* Event Flyer */}
-        <div className="flex justify-center mb-8">
-          <img
-            src="/images/TAG-DER-CLUBKULTUR-2025-MyPeopleBooking-A4.jpg"
-            alt="Bridges of Noise & Care Flyer"
-            className="w-full max-w-2xl rounded shadow-lg"
-          />
-        </div>
-
         {/* Event Details */}
-        <div className="text-center mb-10">
+        <div className="text-left mb-10">
           <h2 className="text-3xl font-black uppercase mb-4">
             Bridges of Noise & Care
           </h2>
           <p className="mb-2 font-semibold">
-            📅 Sunday, 12 October 2025
+          Sunday, 12 October 2025
           </p>
           <p className="mb-2 font-semibold">
-            🕓 Workshop: 16:00 · Acoustic Concerts: 18:00
+            Workshop: 16:00 · Acoustic Concerts: 18:00
           </p>
           <p className="mb-2 font-semibold">
-            📍 Venue: R100 (wheelchair accessible)
+          Venue: R100 (wheelchair accessible)
           </p>
 
           <div className="mt-4 text-left inline-block">
