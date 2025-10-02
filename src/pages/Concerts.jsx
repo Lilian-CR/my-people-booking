@@ -10,7 +10,7 @@ export default function Concerts() {
 
         {/* Existing Content */}
         <h1 className="text-4xl font-black uppercase mb-6 text-center">
-          2025 Series | FLINTA* IM KIEZ
+         * 2025 Series | FLINTA* IM KIEZ *
         </h1>
 
         {/* Justified Paragraphs */}
