@@ -4,13 +4,15 @@ export default function Concerts() {
       <div className="max-w-4xl mx-auto text-black">
         {/* Top Main Image - centered */}
         <div className="mb-8">
+          {/* If you plan to add an image later, put it here */}
+        </div>
 
         {/* Hardline separator */}
         <hr className="border-t-4 border-black my-12" />
 
         {/* Existing Content */}
         <h1 className="text-4xl font-black uppercase mb-6 text-center">
-         * 2025 Series | FLINTA* IM KIEZ *
+          * 2025 Series | FLINTA* IM KIEZ *
         </h1>
 
         {/* Justified Paragraphs */}
