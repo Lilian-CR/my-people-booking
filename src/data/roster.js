@@ -119,9 +119,9 @@ const roster = [
       facebook: "https://www.facebook.com/PacifistIndia",
       spotify: "https://open.spotify.com/intl-pt/artist/0squZVgmZcAXfDPDeFtlPI?si=NY78NaFATIKopdOMdvsshA",
       bandcamp: "https://pacifistindia.bandcamp.com/",
-      songkick: "https://www.songkick.com/artists/10149615"
+      songkick: "https://www.songkick.com/artists/1542957" 
     },
-    songkickId: "10149615"
+    songkickId: "1542957"
   }, 
   {
     id: 9,
