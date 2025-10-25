@@ -34,7 +34,7 @@ const roster = [
     name: "TOMAR CONTROL",
     slug: "tomar-control",
     image: "/images/tomar-control.png",
-    video: "https://www.youtube.com/embed/E05C3fK68jo?si=R5dyqDd0lpjVWylt",
+    video: "https://www.youtube.com/embed/QIoHka5u5C0?si=UEjKV0ScOlaiKNJZ",
     pressKit: "https://www.dropbox.com/scl/fo/bdxyb8mj4086wphoayfqi/ADlufLIzBnFUkqwGSd1UzHw?rlkey=3v83fzmcshkz1q0diql186z6c&e=1&st=1dfs9k4d&",
     bandsintownId: "11339622",
     socials: {
