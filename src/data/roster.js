@@ -4,7 +4,7 @@ const roster = [
     name: "NOTHING WORKS",
     slug: "nothing-works",
     image: "/images/nothing-works.jpg",
-    video: "https://www.youtube.com/embed/VYxrp22G-bA?si=dZSkov3y4raMiQ9B",
+    video: "https://www.youtube.com/embed/SL1Qd1AI5eE?si=vcdfDTyjSJ0R3q80",
     pressKit: "https://www.dropbox.com/scl/fo/ziuco518uqj1o17xe8s5f/h?rlkey=l5kwzfx9kk3vdahq8mta054rr&",
     bandsintownId: "15546761",
     socials: {
