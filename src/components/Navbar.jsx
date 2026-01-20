@@ -8,7 +8,7 @@ export default function Navbar() {
 
   const menu = [
     { label: "HOME", to: "/" },
-    { label: "ROSTER", to: "/roster" },
+    { label: "BANDS", to: "/roster" },
     { label: "CONCERTS", to: "/concerts" },
     { label: "ABOUT", to: "/about" },
     { label: "CONTACT", to: "/contact" },
