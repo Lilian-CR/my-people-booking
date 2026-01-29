@@ -10,7 +10,7 @@ function getYoutubeIdFromEmbedUrl(url = "") {
 export default function BandPage({ band: bandFromProps }) {
   const { bandSlug } = useParams();
 
-  // ✅ SUPPORT BOTH MODES: modal OR direct URL
+  // SUPPORT BOTH MODES: modal OR direct URL
   const band =
     bandFromProps ||
     roster.find((b) => b.slug?.toLowerCase() === bandSlug?.toLowerCase());
