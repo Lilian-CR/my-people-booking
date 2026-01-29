@@ -23,7 +23,7 @@ const mobileRosterImages = [
   "/images/mobile_roster_06.jpg",
   "/images/mobile_roster_07.jpg",
   "/images/mobile_roster_08.jpg",
-  "/images/mobile_roster_08.jpg",
+  "/images/mobile_roster_09.jpg",
 ];
 
 export default function Home() {
@@ -143,5 +143,6 @@ export default function Home() {
     </main>
   );
 }
+
 
 
