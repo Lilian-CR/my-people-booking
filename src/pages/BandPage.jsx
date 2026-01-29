@@ -205,7 +205,6 @@ export default function BandPage({ band: bandFromProps }) {
             data-past-events-offtour="on" 
             data-remind-me="off"
           >
-            TOUR DATES
           </a>
         </div>
       )}
