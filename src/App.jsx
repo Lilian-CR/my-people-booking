@@ -15,20 +15,19 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen bg-white">
+        {/* Navbar always on top */}
         <Navbar />
 
+        {/* Page content */}
         <main className="flex-grow h-[600px] overflow-y-auto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/roster" element={<Roster />} />
+<Route path="/roster/:bandSlug" element={<Roster />} />
             <Route path="/concerts" element={<Concerts />} />
-            <Route path="/mypoplefest" element={<MyPeopleFest />} />
+            <Route path="/mypeoplefest" element={<MyPeopleFest />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-
-            {/* Enables direct URLs for bands */}
-            <Route path="/:bandSlug" element={<BandPage />} />
-
             <Route
               path="*"
               element={
@@ -40,6 +39,7 @@ function App() {
           </Routes>
         </main>
 
+        {/* Footer always at bottom */}
         <Footer />
       </div>
     </Router>
