@@ -220,7 +220,7 @@ Coming Soon!
   id: 10,
   name: "URSULA",
   slug: "ursula",
-  image: "/images/ursula.jpg",
+  image: "/images/ursula.jpeg",
   bio: `
 Ursula blurs the line of every conventional facet of underground noise. Metal, punk, hardcore, grind, crust, thrash, they all apply yet none define them. Hailing from Apple Valley, CA, Ursula has been active as a touring band since 2017. Their debut full-length, I Don’t Like Anything (2025), was released on legendary southern California label Indecision Records (Unbroken, Throwdown, Bleeding Through, Ensign, Death by Stereo, etc.). Recorded, produced, and mastered by Paul Miner (Death by Stereo/Thrice/Atreyu) at Buzzbomb Studios, Orange, CA. Ursula previously released 3 EPs on the Indecision Records label: Meet Is Murder (2017, co-released with Programme Sounds), Regurgitate (2019), and Fickle (2020). Ursula has performed tour dates across California, Pacific Northwest, Midwest, Southwest, and Mexico. Ursula has opened for bands such as Terror, Agnostic Front, Unbroken, Bleeding Through, Cro Mags, Strife, 411, and many other legendary acts in the punk and hardcore community. “Often described as a hardcore band, Ursula swims in a chaotic ocean of influences reminiscent of 1990’s screamo, 2000’s sasscore, and the general vibe of Three One G bands. Make no mistake, the band’s DIY approach, presence in Orange County’s Programme scene, and interpersonal struggle and vegan lyrical themes keep them firmly rooted in the world of hardcore” – Visions Magazine and Evil Greed
  “i don’t like anything” Ursula's new LP on Indecision Records, released April 2025!
