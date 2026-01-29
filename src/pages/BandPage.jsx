@@ -188,9 +188,22 @@ export default function BandPage({ band: bandFromProps }) {
           <a
             href={`https://www.songkick.com/artists/${band.songkickId}`}
             className="songkick-widget"
-            data-theme="light"
-            data-track-button="on"
-            data-past-events="on"
+            data-theme="light" 
+            data-track-button="off" 
+            data-detect-style="on" 
+            data-background-color="3C6760" 
+            data-font-color="#ffffff" 
+            data-button-bg-color="#000000" 
+            data-button-text-color="#ffffff" 
+            data-locale="en" 
+            data-other-artists="off" 
+            data-share-button="off" 
+            data-country-filter="off" 
+            data-rsvp="off" 
+            data-request-show="off" 
+            data-past-events="off" 
+            data-past-events-offtour="on" 
+            data-remind-me="off"
           >
             TOUR DATES
           </a>
