@@ -7,11 +7,6 @@ const roster = [
     slug: "nothing-works",
     image: "/images/nothing-works.jpg",
     bio: `
-Formed in late 2022, Nothing Works is a rising force from Berlin’s underground subcultures. Blending '90s indie/alternative with modern melodic and post-hardcore, their sound is raw, urgent and emotionally charged. Think Drug Church meets Bikini Kill. That’s a good starting point for understanding their unapologetically political lyrics and the fierce energy they bring to every show.
-Their debut EP, "Bold Talk for a Burner Account", released in July 2025, features four songs that give a clear sense of what they’re about. Embrace for impact!
-Composed entirely of FLINTA* members, they are quickly becoming a standout in the local scene, known for both their message and their momentum. Despite being young, Nothing Works has already supported notable acts from Austria, Canada, Germany, Mexico, United States & Peru — including CURB, PUNITIVE DAMAGE, YEAHRS, SHORELINE, GIRLS GO SKA, GO! NYHC, DRY SOCKET & TOMAR CONTROL.
-Their mission? To make people move — dance, stage dive — while also raising awareness about political struggles and everyday resistance.
-
 FFO: Gouge Away, Drug Church, Scowl /
 Photo Credit for promo pic: Oyèmi Noize
 `,
@@ -35,11 +30,6 @@ Photo Credit for promo pic: Oyèmi Noize
     slug: "eskrota",
     image: "/images/eskrota.jpg",
     bio: `
-ESKRÖTA is a hardcore/metal crossover band from São Paulo-Brazil, active since 2017. With continuous releases over the years, the band has: 2 full albums, 2 EPs, 1 Split and 1 single.
-Since its creation, their lyrics have addressed female empowerment and social issues. In 2018, the EP entitled "Eticamente Questionável" delivered important messages and received positive feedback within the Brazilian underground scene.
-ESKRÖTA has already joined the line-up of several prestigious festivals in Brazil, with confirmations for the next "Rock in Rio" and and "Knotfest Brasil" happening this year.
-2024 has been a very busy year for the band, with the opportunity to support the likes of "Exodus" and "Suicidal Tendencies", as well as joining "Napalm Death" on some South American dates in Argentina and Chile planned for October 2024.
-Building on this momentum and prominence, the band toured the EU/UK for the first time in 2025. //
 FFO: Drain, Ratos de Porão
 `,
     videos: [
@@ -222,8 +212,7 @@ Coming Soon!
   slug: "ursula",
   image: "/images/ursula.jpeg",
   bio: `
-Ursula blurs the line of every conventional facet of underground noise. Metal, punk, hardcore, grind, crust, thrash, they all apply yet none define them. Hailing from Apple Valley, CA, Ursula has been active as a touring band since 2017. Their debut full-length, I Don’t Like Anything (2025), was released on legendary southern California label Indecision Records (Unbroken, Throwdown, Bleeding Through, Ensign, Death by Stereo, etc.). Recorded, produced, and mastered by Paul Miner (Death by Stereo/Thrice/Atreyu) at Buzzbomb Studios, Orange, CA. Ursula previously released 3 EPs on the Indecision Records label: Meet Is Murder (2017, co-released with Programme Sounds), Regurgitate (2019), and Fickle (2020). Ursula has performed tour dates across California, Pacific Northwest, Midwest, Southwest, and Mexico. Ursula has opened for bands such as Terror, Agnostic Front, Unbroken, Bleeding Through, Cro Mags, Strife, 411, and many other legendary acts in the punk and hardcore community. “Often described as a hardcore band, Ursula swims in a chaotic ocean of influences reminiscent of 1990’s screamo, 2000’s sasscore, and the general vibe of Three One G bands. Make no mistake, the band’s DIY approach, presence in Orange County’s Programme scene, and interpersonal struggle and vegan lyrical themes keep them firmly rooted in the world of hardcore” – Visions Magazine and Evil Greed
- “i don’t like anything” Ursula's new LP on Indecision Records, released April 2025!
+Coming Soon!
 `,
   videos: [
     "https://www.youtube.com/embed/R22XteGbD04?si=d7oz6qtKdcMI2EsX",
