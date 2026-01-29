@@ -10,17 +10,15 @@ function getYoutubeIdFromEmbedUrl(url = "") {
 export default function BandPage({ band: bandFromProps }) {
   const { bandSlug } = useParams();
 
-  // 🔑 SUPPORT BOTH MODES
+  // ✅ SUPPORT BOTH MODES: modal OR direct URL
   const band =
     bandFromProps ||
-    roster.find(
-      (b) => b.slug?.toLowerCase() === bandSlug?.toLowerCase()
-    );
+    roster.find((b) => b.slug?.toLowerCase() === bandSlug?.toLowerCase());
 
   const [activeVideoIndex, setActiveVideoIndex] = useState(null);
   const videos = useMemo(() => band?.videos || [], [band]);
 
-  /* ---------- video helpers ---------- */
+  /* ---------- VIDEO HELPERS ---------- */
   const openVideo = (index) => setActiveVideoIndex(index);
   const closeVideo = () => setActiveVideoIndex(null);
   const goPrev = () =>
@@ -28,11 +26,10 @@ export default function BandPage({ band: bandFromProps }) {
   const goNext = () =>
     setActiveVideoIndex((i) => (i + 1) % videos.length);
 
-  /* ---------- Lock scroll + keyboard nav ---------- */
+  /* ---------- LOCK SCROLL + KEYBOARD NAV ---------- */
   useEffect(() => {
     const onKeyDown = (e) => {
       if (activeVideoIndex === null) return;
-
       if (e.key === "Escape") closeVideo();
       if (e.key === "ArrowLeft") goPrev();
       if (e.key === "ArrowRight") goNext();
@@ -47,6 +44,25 @@ export default function BandPage({ band: bandFromProps }) {
       document.body.style.overflow = "";
     };
   }, [activeVideoIndex, videos.length]);
+
+  /* ---------- SONGKICK SCRIPT INJECTION ---------- */
+  useEffect(() => {
+    if (!band?.songkickId) return;
+
+    // Remove old Songkick scripts
+    document
+      .querySelectorAll('script[src*="widget-app.songkick.com"]')
+      .forEach((s) => s.remove());
+
+    const script = document.createElement("script");
+    script.src = "https://widget-app.songkick.com/injector.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
+  }, [band?.songkickId]);
 
   if (!band) {
     return (
@@ -119,10 +135,10 @@ export default function BandPage({ band: bandFromProps }) {
         </div>
       )}
 
-      {/* VIDEOS (thumbnails) */}
+      {/* VIDEOS (THUMBNAILS) */}
       {videos.length > 0 && (
         <div className="max-w-[600px] mx-auto mt-10">
-          <div className="grid grid-cols-3 gap-3 w-full">
+          <div className="grid grid-cols-3 gap-3">
             {videos.map((url, idx) => {
               const id = getYoutubeIdFromEmbedUrl(url);
               const thumb = id
@@ -131,10 +147,9 @@ export default function BandPage({ band: bandFromProps }) {
 
               return (
                 <button
-                  key={`${url}-${idx}`}
+                  key={idx}
                   onClick={() => openVideo(idx)}
                   className="relative w-full aspect-video rounded overflow-hidden bg-black/10"
-                  type="button"
                 >
                   {thumb && (
                     <img
@@ -143,7 +158,6 @@ export default function BandPage({ band: bandFromProps }) {
                       className="w-full h-full object-cover"
                     />
                   )}
-
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center">
                       ▶
@@ -156,54 +170,52 @@ export default function BandPage({ band: bandFromProps }) {
         </div>
       )}
 
-      {/* BANDSINTOWN (no horizontal scroll) */}
+      {/* BANDSINTOWN */}
       {band.bandsintownId && (
         <div className="max-w-[600px] mx-auto mt-10 overflow-x-hidden">
           <iframe
             src={`/widgets/bandsintown.html?id=${band.bandsintownId}`}
             title="Bandsintown Widget"
-            className="w-full h-[480px] rounded bg-white block overflow-x-hidden"
+            className="w-full h-[480px] rounded bg-white block"
             frameBorder="0"
           />
         </div>
       )}
-      
-      {/* SONG KICK */}
+
+      {/* SONGKICK */}
       {band.songkickId && (
-  <div className="max-w-[600px] mx-auto mt-10">
-    <a
-      href={`https://www.songkick.com/artists/${band.songkickId}`}
-      className="songkick-widget"
-      data-theme="light"
-      data-track-button="on"
-      data-detect-style="off"
-      data-background-color="#ffffff"
-      data-font-color="#000000"
-      data-button-bg-color="#000000"
-      data-button-text-color="#ffffff"
-      data-locale="en"
-      data-other-artists="off"
-      data-share-button="off"
-      data-country-filter="off"
-      data-rsvp="on"
-      data-request-show="off"
-      data-past-events="on"
-      data-past-events-offtour="on"
-      data-remind-me="off"
-    >
-      TOUR DATES
-    </a>
-  </div>
-)}
+        <div className="max-w-[600px] mx-auto mt-10">
+          <a
+            href={`https://www.songkick.com/artists/${band.songkickId}`}
+            className="songkick-widget"
+            data-theme="light"
+            data-track-button="on"
+            data-detect-style="off"
+            data-background-color="#ffffff"
+            data-font-color="#000000"
+            data-button-bg-color="#000000"
+            data-button-text-color="#ffffff"
+            data-locale="en"
+            data-other-artists="off"
+            data-share-button="off"
+            data-country-filter="off"
+            data-rsvp="on"
+            data-request-show="off"
+            data-past-events="on"
+            data-past-events-offtour="on"
+            data-remind-me="off"
+          >
+            TOUR DATES
+          </a>
+        </div>
+      )}
 
-
-      {/* VIDEO MODAL (carousel) */}
+      {/* VIDEO MODAL */}
       {activeVideoIndex !== null && (
         <div className="fixed inset-0 z-[9999] bg-black/80 flex items-center justify-center px-4">
           <button
             onClick={closeVideo}
             className="absolute top-4 right-4 text-white text-3xl"
-            type="button"
           >
             &times;
           </button>
@@ -213,14 +225,12 @@ export default function BandPage({ band: bandFromProps }) {
               <button
                 onClick={goPrev}
                 className="absolute left-4 md:left-8 text-white text-5xl"
-                type="button"
               >
                 ‹
               </button>
               <button
                 onClick={goNext}
                 className="absolute right-4 md:right-8 text-white text-5xl"
-                type="button"
               >
                 ›
               </button>
