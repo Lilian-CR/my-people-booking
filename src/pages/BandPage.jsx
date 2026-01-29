@@ -45,16 +45,13 @@ export default function BandPage({ band: bandFromProps }) {
     };
   }, [activeVideoIndex, videos.length]);
 
-{band.songkickId && (
-  <div className="max-w-[600px] mx-auto mt-10">
-    <iframe
-      title="Songkick Tour Dates"
-      src={`https://widget.songkick.com/widget/artist/${band.songkickId}?theme=light`}
-      className="w-full h-[480px] border-0"
-      loading="lazy"
-    />
-  </div>
-)}
+  if (!band) {
+    return (
+      <div className="text-center text-black p-20 text-2xl">
+        Band not found
+      </div>
+    );
+  }
 
   return (
     <div className="bg-white min-h-[600px] py-10 px-6">
@@ -114,7 +111,7 @@ export default function BandPage({ band: bandFromProps }) {
 
       {/* BIO */}
       {band.bio && (
-        <div className="max-w-[600px] mx-auto mt-6 text-sm md:text-base leading-relaxed text-justify text-black">
+        <div className="max-w-[600px] mx-auto mt-6 text-sm md:text-base leading-relaxed text-justify text-black whitespace-pre-line">
           {band.bio}
         </div>
       )}
@@ -166,31 +163,15 @@ export default function BandPage({ band: bandFromProps }) {
         </div>
       )}
 
-      {/* SONGKICK */}
+      {/* SONGKICK — iframe ONLY */}
       {band.songkickId && (
         <div className="max-w-[600px] mx-auto mt-10">
-          <a
-            href={`https://www.songkick.com/artists/${band.songkickId}`}
-            className="songkick-widget"
-            data-theme="light"
-            data-track-button="on"
-            data-detect-style="off"
-            data-background-color="#ffffff"
-            data-font-color="#000000"
-            data-button-bg-color="#000000"
-            data-button-text-color="#ffffff"
-            data-locale="en"
-            data-other-artists="off"
-            data-share-button="off"
-            data-country-filter="off"
-            data-rsvp="on"
-            data-request-show="off"
-            data-past-events="on"
-            data-past-events-offtour="on"
-            data-remind-me="off"
-          >
-            TOUR DATES
-          </a>
+          <iframe
+            title="Songkick Tour Dates"
+            src={`https://widget.songkick.com/widget/artist/${band.songkickId}?theme=light`}
+            className="w-full h-[480px] border-0"
+            loading="lazy"
+          />
         </div>
       )}
 
