@@ -190,7 +190,7 @@ export default function BandPage({ band: bandFromProps }) {
             className="songkick-widget"
             data-theme="light" 
             data-track-button="off" 
-            data-detect-style="on" 
+            data-detect-style="off" 
             data-background-color="#3C6760" 
             data-font-color="#ffffff" 
             data-button-bg-color="#000000" 
@@ -201,7 +201,7 @@ export default function BandPage({ band: bandFromProps }) {
             data-country-filter="off" 
             data-rsvp="off" 
             data-request-show="off" 
-            data-past-events="off" 
+            data-past-events="on" 
             data-past-events-offtour="on" 
             data-remind-me="off"
           >
