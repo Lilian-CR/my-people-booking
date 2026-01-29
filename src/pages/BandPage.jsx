@@ -167,6 +167,35 @@ export default function BandPage({ band: bandFromProps }) {
           />
         </div>
       )}
+      
+      {/* SONG KICK */}
+      {band.songkickId && (
+  <div className="max-w-[600px] mx-auto mt-10">
+    <a
+      href={`https://www.songkick.com/artists/${band.songkickId}`}
+      className="songkick-widget"
+      data-theme="light"
+      data-track-button="on"
+      data-detect-style="off"
+      data-background-color="#ffffff"
+      data-font-color="#000000"
+      data-button-bg-color="#000000"
+      data-button-text-color="#ffffff"
+      data-locale="en"
+      data-other-artists="off"
+      data-share-button="off"
+      data-country-filter="off"
+      data-rsvp="on"
+      data-request-show="off"
+      data-past-events="on"
+      data-past-events-offtour="on"
+      data-remind-me="off"
+    >
+      TOUR DATES
+    </a>
+  </div>
+)}
+
 
       {/* VIDEO MODAL (carousel) */}
       {activeVideoIndex !== null && (
