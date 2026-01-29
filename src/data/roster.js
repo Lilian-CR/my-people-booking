@@ -238,7 +238,6 @@ Ursula blurs the line of every conventional facet of underground noise. Metal, p
   pressKit:
     "https://www.dropbox.com/scl/fo/yah9m6qwq4rb2uvq70m36/AOz1jAzNZK6eY9HmmLbDvF8?rlkey=oegkbdlm3ito8djanlged8kzm&st=p641rrzg&dl=0",
   songkickId: "10107713",
-},
   },
 ];
 
