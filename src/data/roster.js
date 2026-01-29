@@ -21,7 +21,7 @@ Photo Credit for promo pic: Oyèmi Noize
       bandcamp: "https://nothingworksbln.bandcamp.com",
     },
     pressKit: "https://www.dropbox.com/....",
-    bandsintownId: "15546761",
+    songkickId: "10266266",   
   },
 
   {
