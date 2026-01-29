@@ -1,4 +1,3 @@
-// src/pages/BandPage.jsx
 import { useParams } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import roster from "../data/roster";
@@ -8,16 +7,20 @@ function getYoutubeIdFromEmbedUrl(url = "") {
   return match?.[1] || null;
 }
 
-export default function BandPage() {
+export default function BandPage({ band: bandFromProps }) {
   const { bandSlug } = useParams();
-  const band = roster.find(
-    (b) => b.slug?.toLowerCase() === bandSlug?.toLowerCase()
-  );
+
+  // 🔑 SUPPORT BOTH MODES
+  const band =
+    bandFromProps ||
+    roster.find(
+      (b) => b.slug?.toLowerCase() === bandSlug?.toLowerCase()
+    );
 
   const [activeVideoIndex, setActiveVideoIndex] = useState(null);
   const videos = useMemo(() => band?.videos || [], [band]);
 
-  /* ---------- close helpers ---------- */
+  /* ---------- video helpers ---------- */
   const openVideo = (index) => setActiveVideoIndex(index);
   const closeVideo = () => setActiveVideoIndex(null);
   const goPrev = () =>
@@ -36,7 +39,6 @@ export default function BandPage() {
     };
 
     document.addEventListener("keydown", onKeyDown);
-
     document.body.style.overflow =
       activeVideoIndex !== null ? "hidden" : "";
 
@@ -76,10 +78,26 @@ export default function BandPage() {
       {/* ICONS + PRESSKIT */}
       <div className="max-w-[600px] mx-auto mt-4 flex items-center justify-between">
         <div className="flex gap-4 text-xl text-primary">
-          {band.socials?.instagram && <a href={band.socials.instagram} target="_blank" rel="noreferrer"><i className="fab fa-instagram" /></a>}
-          {band.socials?.facebook && <a href={band.socials.facebook} target="_blank" rel="noreferrer"><i className="fab fa-facebook" /></a>}
-          {band.socials?.spotify && <a href={band.socials.spotify} target="_blank" rel="noreferrer"><i className="fab fa-spotify" /></a>}
-          {band.socials?.bandcamp && <a href={band.socials.bandcamp} target="_blank" rel="noreferrer"><i className="fab fa-bandcamp" /></a>}
+          {band.socials?.instagram && (
+            <a href={band.socials.instagram} target="_blank" rel="noreferrer">
+              <i className="fab fa-instagram" />
+            </a>
+          )}
+          {band.socials?.facebook && (
+            <a href={band.socials.facebook} target="_blank" rel="noreferrer">
+              <i className="fab fa-facebook" />
+            </a>
+          )}
+          {band.socials?.spotify && (
+            <a href={band.socials.spotify} target="_blank" rel="noreferrer">
+              <i className="fab fa-spotify" />
+            </a>
+          )}
+          {band.socials?.bandcamp && (
+            <a href={band.socials.bandcamp} target="_blank" rel="noreferrer">
+              <i className="fab fa-bandcamp" />
+            </a>
+          )}
         </div>
 
         {band.pressKit && (
@@ -101,10 +119,9 @@ export default function BandPage() {
         </div>
       )}
 
-      {/* VIDEOS (thumbnail carousel) */}
+      {/* VIDEOS (thumbnails) */}
       {videos.length > 0 && (
         <div className="max-w-[600px] mx-auto mt-10">
-
           <div className="grid grid-cols-3 gap-3 w-full">
             {videos.map((url, idx) => {
               const id = getYoutubeIdFromEmbedUrl(url);
@@ -139,21 +156,19 @@ export default function BandPage() {
         </div>
       )}
 
-      {/* BANDSINTOWN */}
-{band.bandsintownId && (
-  <div className="max-w-[600px] mx-auto mt-10 overflow-x-hidden">
-    <div className="w-full overflow-x-hidden">
-      <iframe
-        src={`/widgets/bandsintown.html?id=${band.bandsintownId}`}
-        title="Bandsintown Widget"
-        className="w-full max-w-full h-[480px] rounded bg-white block"
-        frameBorder="0"
-      />
-    </div>
-  </div>
-)}
+      {/* BANDSINTOWN (no horizontal scroll) */}
+      {band.bandsintownId && (
+        <div className="max-w-[600px] mx-auto mt-10 overflow-x-hidden">
+          <iframe
+            src={`/widgets/bandsintown.html?id=${band.bandsintownId}`}
+            title="Bandsintown Widget"
+            className="w-full h-[480px] rounded bg-white block overflow-x-hidden"
+            frameBorder="0"
+          />
+        </div>
+      )}
 
-      {/* VIDEO MODAL + carousel) */}
+      {/* VIDEO MODAL (carousel) */}
       {activeVideoIndex !== null && (
         <div className="fixed inset-0 z-[9999] bg-black/80 flex items-center justify-center px-4">
           <button
