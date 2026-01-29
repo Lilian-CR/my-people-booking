@@ -191,7 +191,7 @@ export default function BandPage({ band: bandFromProps }) {
             data-theme="light" 
             data-track-button="off" 
             data-detect-style="on" 
-            data-background-color="3C6760" 
+            data-background-color="#3C6760" 
             data-font-color="#ffffff" 
             data-button-bg-color="#000000" 
             data-button-text-color="#ffffff" 
