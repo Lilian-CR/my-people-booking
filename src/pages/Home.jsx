@@ -10,6 +10,7 @@ const desktopRosterImages = [
   "/images/roster6.jpg",
   "/images/roster7.jpg",
   "/images/roster8.jpg",
+  "/images/roster9.jpg",
 ];
 
 // Mobile images: 830x1100 px
@@ -21,6 +22,7 @@ const mobileRosterImages = [
   "/images/mobile_roster_05.jpg",
   "/images/mobile_roster_06.jpg",
   "/images/mobile_roster_07.jpg",
+  "/images/mobile_roster_08.jpg",
   "/images/mobile_roster_08.jpg",
 ];
 
@@ -141,4 +143,5 @@ export default function Home() {
     </main>
   );
 }
+
 
