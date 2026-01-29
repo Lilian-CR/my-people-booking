@@ -12,7 +12,7 @@ Their debut EP, "Bold Talk for a Burner Account", released in July 2025, feature
 Composed entirely of FLINTA* members, they are quickly becoming a standout in the local scene, known for both their message and their momentum. Despite being young, Nothing Works has already supported notable acts from Austria, Canada, Germany, Mexico, United States & Peru — including CURB, PUNITIVE DAMAGE, YEAHRS, SHORELINE, GIRLS GO SKA, GO! NYHC, DRY SOCKET & TOMAR CONTROL.
 Their mission? To make people move — dance, stage dive — while also raising awareness about political struggles and everyday resistance.
 
-FFO: Gouge Away, Drug Church, Scowl
+FFO: Gouge Away, Drug Church, Scowl /
 Photo Credit for promo pic: Oyèmi Noize
 `,
     videos: [
@@ -35,24 +35,12 @@ Photo Credit for promo pic: Oyèmi Noize
     slug: "eskrota",
     image: "/images/eskrota.jpg",
     bio: `
-<p>
 ESKRÖTA is a hardcore/metal crossover band from São Paulo-Brazil, active since 2017. With continuous releases over the years, the band has: 2 full albums, 2 EPs, 1 Split and 1 single.
-</p>
-<p>
-Since its creation, their lyrics have addressed female empowerment and social issues. In 2018, the EP entitled "Eticamente Questionável" delivered important messages and received positive feedback within the Brazilian underground scene.
-</p>
-<p>
+<br>Since its creation, their lyrics have addressed female empowerment and social issues. In 2018, the EP entitled "Eticamente Questionável" delivered important messages and received positive feedback within the Brazilian underground scene.
 ESKRÖTA has already joined the line-up of several prestigious festivals in Brazil, with confirmations for the next "Rock in Rio" and and "Knotfest Brasil" happening this year.
-</p>
-<p>
 2024 has been a very busy year for the band, with the opportunity to support the likes of "Exodus" and "Suicidal Tendencies", as well as joining "Napalm Death" on some South American dates in Argentina and Chile planned for October 2024.
-</p>
-<p>
 Building on this momentum and prominence, the band toured the EU/UK for the first time in 2025.
-</p>
-<p>
-<b>FFO:</b> Drain, Ratos de Porão
-</p>
+FFO:</b> Drain, Ratos de Porão
 `,
     videos: [
       "https://www.youtube.com/embed/q7p_s17lMmc?si=9T8grc9CP8b5J4JX",
