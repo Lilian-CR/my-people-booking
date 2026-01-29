@@ -45,14 +45,23 @@ export default function BandPage({ band: bandFromProps }) {
     };
   }, [activeVideoIndex, videos.length]);
 
-  /* ---------- 🔥 SONGKICK RE-SCAN (THIS IS THE KEY) ---------- */
+  /* ---------- ✅ SONGKICK: ARTIST-SPECIFIC INJECTOR ---------- */
   useEffect(() => {
     if (!band?.songkickId) return;
 
-    // Songkick exposes this globally after injector.js loads
-    if (window.SongkickWidget && window.SongkickWidget.reload) {
-      window.SongkickWidget.reload();
-    }
+    // Remove any previous Songkick injectors
+    document
+      .querySelectorAll('script[src*="widget-app.songkick.com/injector"]')
+      .forEach((s) => s.remove());
+
+    const script = document.createElement("script");
+    script.src = `https://widget-app.songkick.com/injector/${band.songkickId}`;
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
   }, [band?.songkickId]);
 
   if (!band) {
@@ -126,7 +135,7 @@ export default function BandPage({ band: bandFromProps }) {
         </div>
       )}
 
-      {/* VIDEOS (THUMBNAILS) */}
+      {/* VIDEOS */}
       {videos.length > 0 && (
         <div className="max-w-[600px] mx-auto mt-10">
           <div className="grid grid-cols-3 gap-3">
@@ -173,7 +182,7 @@ export default function BandPage({ band: bandFromProps }) {
         </div>
       )}
 
-      {/* ✅ SONGKICK (WORKING) */}
+      {/* ✅ SONGKICK (THIS NOW WORKS) */}
       {band.songkickId && (
         <div className="max-w-[600px] mx-auto mt-10">
           <a
