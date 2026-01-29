@@ -45,6 +45,16 @@ export default function BandPage({ band: bandFromProps }) {
     };
   }, [activeVideoIndex, videos.length]);
 
+  /* ---------- 🔥 SONGKICK RE-SCAN (THIS IS THE KEY) ---------- */
+  useEffect(() => {
+    if (!band?.songkickId) return;
+
+    // Songkick exposes this globally after injector.js loads
+    if (window.SongkickWidget && window.SongkickWidget.reload) {
+      window.SongkickWidget.reload();
+    }
+  }, [band?.songkickId]);
+
   if (!band) {
     return (
       <div className="text-center text-black p-20 text-2xl">
@@ -163,20 +173,20 @@ export default function BandPage({ band: bandFromProps }) {
         </div>
       )}
 
-      {/* SONGKICK */}
-    {band.songkickId && (
-  <div className="max-w-[600px] mx-auto mt-10">
-    <a
-      href={`https://www.songkick.com/artists/${band.songkickId}`}
-      className="songkick-widget"
-      data-theme="light"
-      data-track-button="on"
-      data-past-events="on"
-    >
-      TOUR DATES
-    </a>
-  </div>
-)}
+      {/* ✅ SONGKICK (WORKING) */}
+      {band.songkickId && (
+        <div className="max-w-[600px] mx-auto mt-10">
+          <a
+            href={`https://www.songkick.com/artists/${band.songkickId}`}
+            className="songkick-widget"
+            data-theme="light"
+            data-track-button="on"
+            data-past-events="on"
+          >
+            TOUR DATES
+          </a>
+        </div>
+      )}
 
       {/* VIDEO MODAL */}
       {activeVideoIndex !== null && (
