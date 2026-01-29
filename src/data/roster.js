@@ -6,7 +6,27 @@ const roster = [
     name: "NOTHING WORKS",
     slug: "nothing-works",
     image: "/images/nothing-works.jpg",
-    bio: "Short bio text here...",
+    bio: bio: `
+<p>
+  Formed in late 2022, <strong>Nothing Works</strong> is a rising force from Berlin’s underground subcultures. Blending '90s indie/alternative with modern melodic and post-hardcore, their sound is raw, urgent and emotionally charged. Think Drug Church meets Bikini Kill. That’s a good starting point for understanding their unapologetically political lyrics and the fierce energy they bring to every show.
+</p>
+<p>
+  Their debut EP, <i>"Bold Talk for a Burner Account"</i>, released in July 2025, features four songs that give a clear sense of what they’re about. Embrace for impact!
+</p>
+<p>
+  The band, composed entirely of FLINTA* members, is quickly becoming a standout in the local scene, known for both their message and their momentum. Despite being young, Nothing Works has already supported notable acts from Austria, Canada, Germany, Mexico, United States & Peru — including CURB, PUNITIVE DAMAGE, YEAHRS, SHORELINE, GIRLS GO SKA, GO! NYHC, DRY SOCKET & TOMAR CONTROL.
+</p>
+<p>
+  Their mission? To make people move — dance, stage dive — while also raising awareness about political struggles and everyday resistance.
+</p>
+<p><b>FFO:</b> Gouge Away, Drug Church, Scowl</p>
+<p>
+  <b>Photo Credit for promo pic:</b><br>
+  <a href="https://www.instagram.com/noheroes.jpg" target="_blank" rel="noreferrer">
+    Oyèmi Noize
+  </a>
+</p>
+`,
     videos: [
       "https://www.youtube.com/embed/SL1Qd1AI5eE?si=zISQnByoij8yidCm",
       "https://www.youtube.com/embed/3L_ivyrFwMo?si=awetvWKu8_F1DJrL",
@@ -15,7 +35,6 @@ const roster = [
     socials: {
       instagram: "https://www.instagram.com/nothingworksbln",
       facebook: "https://www.facebook.com/nothingworksbln",
-      spotify: "https://open.spotify.com/artist/1gYycpeQDRB8gqsbMPzzvA",
       bandcamp: "https://nothingworksbln.bandcamp.com",
     },
     pressKit: "https://www.dropbox.com/....",
@@ -27,17 +46,38 @@ const roster = [
     name: "ESKRÖTA",
     slug: "eskrota",
     image: "/images/eskrota.jpg",
-    video: "https://www.youtube.com/embed/MuCvD4USEn8?si=fdX-yOBU9wn3-AaG",
-    pressKit:
-      "https://www.dropbox.com/scl/fo/qhsizldq6pfi9ulgzeko1/ACe2w7jXuKoV7K-j2xMGgc4?rlkey=k8176uyk8d5l8mvpqpbddbzei&st=fogvsl1g&",
-    bandsintownId: "15556450",
-    socials: {
+    bio: `
+<p>
+ESKRÖTA is a hardcore/metal crossover band from São Paulo-Brazil, active since 2017. With continuous releases over the years, the band has: 2 full albums, 2 EPs, 1 Split and 1 single.
+</p>
+<p>
+Since its creation, their lyrics have addressed female empowerment and social issues. In 2018, the EP entitled "Eticamente Questionável" delivered important messages and received positive feedback within the Brazilian underground scene.
+</p>
+<p>
+ESKRÖTA has already joined the line-up of several prestigious festivals in Brazil, with confirmations for the next "Rock in Rio" and and "Knotfest Brasil" happening this year.
+</p>
+<p>
+2024 has been a very busy year for the band, with the opportunity to support the likes of "Exodus" and "Suicidal Tendencies", as well as joining "Napalm Death" on some South American dates in Argentina and Chile planned for October 2024.
+</p>
+<p>
+Building on this momentum and prominence, the band toured the EU/UK for the first time in 2025.
+</p>
+<p>
+<b>FFO:</b> Drain, Ratos de Porão
+</p>
+`,
+    videos: [
+      "https://www.youtube.com/embed/q7p_s17lMmc?si=9T8grc9CP8b5J4JX",
+      "https://www.youtube.com/embed/hXa_aDYeF5c?si=-I2eX9BM4shFDlt2",
+      "https://www.youtube.com/embed/MuCvD4USEn8?si=HdweWsdSMID8D2zq",
+    ],
+socials: {
       instagram: "https://www.instagram.com/eskrotacs",
       facebook: "https://www.facebook.com/eskrota",
-      spotify:
-        "https://open.spotify.com/intl-pt/artist/2GBzppia5YLmohYv2Y8OAG?si=AjAN1ZiAQ52W4gGHNPLSJg",
-      bandcamp: "https://eskrotacs.bandcamp.com/",
+      bandcamp: "https://eskrotacs.bandcamp.com",
     },
+    pressKit: "https://www.dropbox.com/scl/fo/qhsizldq6pfi9ulgzeko1/ACe2w7jXuKoV7K-j2xMGgc4?rlkey=k8176uyk8d5l8mvpqpbddbzei&st=fogvsl1g&",
+    bandsintownId: "15556450",
   },
 
   {
