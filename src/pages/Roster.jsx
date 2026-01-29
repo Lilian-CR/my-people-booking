@@ -18,11 +18,11 @@ export default function Roster() {
         {[...roster]
           .sort((a, b) => a.name.localeCompare(b.name))
           .map((band) => (
-            <Link
-              key={band.id}
-              to={`/roster/${band.slug}`}
-              className="group cursor-pointer"
-            >
+            <div
+  key={band.id}
+  onClick={() => setSelectedBand(band)}
+  className="group cursor-pointer"
+>
               <div className="overflow-hidden rounded shadow-md">
                 <img
                   src={band.image}
@@ -60,3 +60,4 @@ export default function Roster() {
     </div>
   );
 }
+
