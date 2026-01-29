@@ -46,31 +46,24 @@ export default function BandPage({ band: bandFromProps }) {
   }, [activeVideoIndex, videos.length]);
 
   /* ---------- SONGKICK SCRIPT INJECTION ---------- */
-  useEffect(() => {
-    if (!band?.songkickId) return;
+ useEffect(() => {
+  if (!band?.songkickId) return;
 
-    // Remove old Songkick scripts
-    document
-      .querySelectorAll('script[src*="widget-app.songkick.com"]')
-      .forEach((s) => s.remove());
+  // Remove previous Songkick scripts
+  document
+    .querySelectorAll('script[src*="widget-app.songkick.com"]')
+    .forEach((s) => s.remove());
 
-    const script = document.createElement("script");
-    script.src = "https://widget-app.songkick.com/injector.js";
-    script.async = true;
-    document.body.appendChild(script);
+  const script = document.createElement("script");
+  script.src = "https://widget-app.songkick.com/injector.js";
+  script.async = true;
+  document.body.appendChild(script);
 
-    return () => {
-      script.remove();
-    };
-  }, [band?.songkickId]);
+  return () => {
+    script.remove();
+  };
+}, [band?.songkickId]);
 
-  if (!band) {
-    return (
-      <div className="text-center text-black p-20 text-2xl">
-        Band not found
-      </div>
-    );
-  }
 
   return (
     <div className="bg-white min-h-[600px] py-10 px-6">
