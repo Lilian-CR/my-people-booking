@@ -36,11 +36,11 @@ Photo Credit for promo pic: Oyèmi Noize
     image: "/images/eskrota.jpg",
     bio: `
 ESKRÖTA is a hardcore/metal crossover band from São Paulo-Brazil, active since 2017. With continuous releases over the years, the band has: 2 full albums, 2 EPs, 1 Split and 1 single.
-<br>Since its creation, their lyrics have addressed female empowerment and social issues. In 2018, the EP entitled "Eticamente Questionável" delivered important messages and received positive feedback within the Brazilian underground scene.
+Since its creation, their lyrics have addressed female empowerment and social issues. In 2018, the EP entitled "Eticamente Questionável" delivered important messages and received positive feedback within the Brazilian underground scene.
 ESKRÖTA has already joined the line-up of several prestigious festivals in Brazil, with confirmations for the next "Rock in Rio" and and "Knotfest Brasil" happening this year.
 2024 has been a very busy year for the band, with the opportunity to support the likes of "Exodus" and "Suicidal Tendencies", as well as joining "Napalm Death" on some South American dates in Argentina and Chile planned for October 2024.
-Building on this momentum and prominence, the band toured the EU/UK for the first time in 2025.
-FFO:</b> Drain, Ratos de Porão
+Building on this momentum and prominence, the band toured the EU/UK for the first time in 2025. //
+FFO: Drain, Ratos de Porão
 `,
     videos: [
       "https://www.youtube.com/embed/q7p_s17lMmc?si=9T8grc9CP8b5J4JX",
