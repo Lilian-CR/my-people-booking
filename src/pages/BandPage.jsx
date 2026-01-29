@@ -45,25 +45,16 @@ export default function BandPage({ band: bandFromProps }) {
     };
   }, [activeVideoIndex, videos.length]);
 
-  /* ---------- SONGKICK SCRIPT INJECTION ---------- */
- useEffect(() => {
-  if (!band?.songkickId) return;
-
-  // Remove previous Songkick scripts
-  document
-    .querySelectorAll('script[src*="widget-app.songkick.com"]')
-    .forEach((s) => s.remove());
-
-  const script = document.createElement("script");
-  script.src = "https://widget-app.songkick.com/injector.js";
-  script.async = true;
-  document.body.appendChild(script);
-
-  return () => {
-    script.remove();
-  };
-}, [band?.songkickId]);
-
+{band.songkickId && (
+  <div className="max-w-[600px] mx-auto mt-10">
+    <iframe
+      title="Songkick Tour Dates"
+      src={`https://widget.songkick.com/widget/artist/${band.songkickId}?theme=light`}
+      className="w-full h-[480px] border-0"
+      loading="lazy"
+    />
+  </div>
+)}
 
   return (
     <div className="bg-white min-h-[600px] py-10 px-6">
