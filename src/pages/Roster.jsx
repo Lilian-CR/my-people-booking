@@ -1,14 +1,12 @@
-// src/pages/Roster.jsx
+import { useState } from "react";
 import roster from "../data/roster";
-import { Link, useNavigate, useParams } from "react-router-dom";
 import BandPage from "./BandPage";
 
 export default function Roster() {
-  const navigate = useNavigate();
-  const { bandSlug } = useParams(); // comes from /roster/:bandSlug
+  const [selectedBand, setSelectedBand] = useState(null);
 
   const closeModal = () => {
-    navigate("/roster");
+    setSelectedBand(null);
   };
 
   return (
@@ -19,10 +17,10 @@ export default function Roster() {
           .sort((a, b) => a.name.localeCompare(b.name))
           .map((band) => (
             <div
-  key={band.id}
-  onClick={() => setSelectedBand(band)}
-  className="group cursor-pointer"
->
+              key={band.id}
+              onClick={() => setSelectedBand(band)}
+              className="group cursor-pointer"
+            >
               <div className="overflow-hidden rounded shadow-md">
                 <img
                   src={band.image}
@@ -34,12 +32,12 @@ export default function Roster() {
               <h2 className="mt-4 text-center font-bold text-gray-800 text-lg group-hover:text-primary uppercase">
                 {band.name}
               </h2>
-            </Link>
+            </div>
           ))}
       </div>
 
       {/* Modal overlay */}
-      {bandSlug && (
+      {selectedBand && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-4">
           <div className="bg-white rounded-lg max-w-[650px] w-full relative overflow-y-auto max-h-[90vh] p-6 shadow-lg">
             {/* Close */}
@@ -52,12 +50,11 @@ export default function Roster() {
               &times;
             </button>
 
-            {/* BandPage content inside modal */}
-            <BandPage />
+            {/* Band content */}
+            <BandPage band={selectedBand} />
           </div>
         </div>
       )}
     </div>
   );
 }
-
