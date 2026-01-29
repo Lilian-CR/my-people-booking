@@ -163,17 +163,20 @@ export default function BandPage({ band: bandFromProps }) {
         </div>
       )}
 
-      {/* SONGKICK — iframe ONLY */}
-      {band.songkickId && (
-        <div className="max-w-[600px] mx-auto mt-10">
-          <iframe
-            title="Songkick Tour Dates"
-            src={`https://widget.songkick.com/widget/artist/${band.songkickId}?theme=light`}
-            className="w-full h-[480px] border-0"
-            loading="lazy"
-          />
-        </div>
-      )}
+      {/* SONGKICK */}
+    {band.songkickId && (
+  <div className="max-w-[600px] mx-auto mt-10">
+    <a
+      href={`https://www.songkick.com/artists/${band.songkickId}`}
+      className="songkick-widget"
+      data-theme="light"
+      data-track-button="on"
+      data-past-events="on"
+    >
+      TOUR DATES
+    </a>
+  </div>
+)}
 
       {/* VIDEO MODAL */}
       {activeVideoIndex !== null && (
