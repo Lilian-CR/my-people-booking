@@ -7,13 +7,12 @@ const roster = [
     slug: "nothing-works",
     image: "/images/nothing-works.jpg",
     bio: `
-Formed in late 2022, <strong>Nothing Works</strong> is a rising force from Berlin’s underground subcultures. Blending '90s indie/alternative with modern melodic and post-hardcore, their sound is raw, urgent and emotionally charged. Think Drug Church meets Bikini Kill. That’s a good starting point for understanding their unapologetically political lyrics and the fierce energy they bring to every show.
-Their debut EP, <i>"Bold Talk for a Burner Account"</i>, released in July 2025, features four songs that give a clear sense of what they’re about. Embrace for impact!
-The band, composed entirely of FLINTA* members, is quickly becoming a standout in the local scene, known for both their message and their momentum. Despite being young, Nothing Works has already supported notable acts from Austria, Canada, Germany, Mexico, United States & Peru — including CURB, PUNITIVE DAMAGE, YEAHRS, SHORELINE, GIRLS GO SKA, GO! NYHC, DRY SOCKET & TOMAR CONTROL.
+Formed in late 2022, Nothing Works is a rising force from Berlin’s underground subcultures. Blending '90s indie/alternative with modern melodic and post-hardcore, their sound is raw, urgent and emotionally charged. Think Drug Church meets Bikini Kill. That’s a good starting point for understanding their unapologetically political lyrics and the fierce energy they bring to every show.
+Their debut EP, "Bold Talk for a Burner Account", released in July 2025, features four songs that give a clear sense of what they’re about. Embrace for impact!
+Composed entirely of FLINTA* members, they are quickly becoming a standout in the local scene, known for both their message and their momentum. Despite being young, Nothing Works has already supported notable acts from Austria, Canada, Germany, Mexico, United States & Peru — including CURB, PUNITIVE DAMAGE, YEAHRS, SHORELINE, GIRLS GO SKA, GO! NYHC, DRY SOCKET & TOMAR CONTROL.
 Their mission? To make people move — dance, stage dive — while also raising awareness about political struggles and everyday resistance.
 
-FFO:</b> Gouge Away, Drug Church, Scowl</p>
-
+FFO: Gouge Away, Drug Church, Scowl
 Photo Credit for promo pic: Oyèmi Noize
 `,
     videos: [
