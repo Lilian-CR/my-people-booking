@@ -212,7 +212,7 @@ Coming Soon!
   slug: "ursula",
   image: "/images/ursula.jpeg",
   bio: `
-FFO: The Locust, Punch, Torso, Undying, Prayer For Cleansing and Aus Rotten.
+FFO: The Locust, Punch, Torso, Undying, Prayer For Cleansing, Aus Rotten
 `,
   videos: [
     "https://www.youtube.com/embed/R22XteGbD04?si=d7oz6qtKdcMI2EsX",
