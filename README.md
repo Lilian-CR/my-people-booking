@@ -1,6 +1,6 @@
 # My People Booking
 
-A concert booking and D.I.Y. band roster website for DIY artists and bands in the EU/UK, focusing on FLINTA* & BIPoC representation and grassroots music activism.
+DIY concert and tour booking website supporting artists and bands touring across the EU and UK, with a globally diverse roster spanning multiple continents, and a strong focus on FLINTA* and BIPoC representation and grassroots music initiatives.
 
 ![Screenshot](public/images/roster1.jpg)
 
@@ -47,3 +47,4 @@ Visit: [https://mypeoplebooking.net](https://mypeoplebooking.net)
 │   └── main.jsx          # Entry point
 ├── dist/                 # Production build output
 └── index.html
+
