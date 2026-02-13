@@ -20,7 +20,7 @@ Photo Credit for promo pic: Oyèmi Noize
       facebook: "https://www.facebook.com/nothingworksbln",
       bandcamp: "https://nothingworksbln.bandcamp.com",
     },
-    pressKit: "https://www.dropbox.com/....",
+    pressKit: "https://www.dropbox.com/scl/fo/ziuco518uqj1o17xe8s5f/h?rlkey=l5kwzfx9kk3vdahq8mta054rr&st=008qqard&dl=0",
     songkickId: "10266266",   
   },
 
