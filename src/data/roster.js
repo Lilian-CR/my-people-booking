@@ -25,28 +25,6 @@ Photo Credit for promo pic: Oyèmi Noize
   },
 
   {
-    id: 2,
-    name: "ESKRÖTA",
-    slug: "eskrota",
-    image: "/images/eskrota.jpg",
-    bio: `
-FFO: Drain, Ratos de Porão
-`,
-    videos: [
-      "https://www.youtube.com/embed/q7p_s17lMmc?si=9T8grc9CP8b5J4JX",
-      "https://www.youtube.com/embed/hXa_aDYeF5c?si=-I2eX9BM4shFDlt2",
-      "https://www.youtube.com/embed/MuCvD4USEn8?si=HdweWsdSMID8D2zq",
-    ],
-socials: {
-      instagram: "https://www.instagram.com/eskrotacs",
-      facebook: "https://www.facebook.com/eskrota",
-      bandcamp: "https://eskrotacs.bandcamp.com",
-    },
-    pressKit: "https://www.dropbox.com/scl/fo/qhsizldq6pfi9ulgzeko1/ACe2w7jXuKoV7K-j2xMGgc4?rlkey=k8176uyk8d5l8mvpqpbddbzei&st=fogvsl1g&",
-    bandsintownId: "15556450",
-  },
-
-  {
   id: 3,
   name: "TOMAR CONTROL",
   slug: "tomar-control",
