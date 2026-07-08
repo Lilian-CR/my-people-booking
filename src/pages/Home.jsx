@@ -17,7 +17,6 @@ const mobileRosterImages = [
   "/images/mobile_roster_01.jpg",
   "/images/mobile_roster_02.jpg",
   "/images/mobile_roster_03.jpg",
-  "/images/mobile_roster_04.jpg",
   "/images/mobile_roster_05.jpg",
   "/images/mobile_roster_06.jpg",
   "/images/mobile_roster_07.jpg",
