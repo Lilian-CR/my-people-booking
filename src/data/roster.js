@@ -44,7 +44,7 @@ Photo Credit for promo pic: @gigs_on_film
   },
   pressKit:
     "https://www.dropbox.com/scl/fo/hlrjb93djz6b5b3x13e5u/AD-MopaYuNxIsONafOv-2Hg?rlkey=c6fztezqsxuk5l9sp6vajzj0y&st=dohosw1c&dl=0",
-  songkickId: "10266266",
+  songkickId: "10381388",
 },
   {
   id: 3,
