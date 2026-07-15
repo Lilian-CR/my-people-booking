@@ -29,8 +29,7 @@ Photo Credit for promo pic: Oyèmi Noize
   slug: "funeral",
   image: "/images/funeral.JPG",
   bio: `
-FFO: Title Fight, Basement, Lifetime, Small Brown Bike and Rites of Spring /
-Photo Credit for promo pic: @gigs_on_film
+FFO: Title Fight, Basement, Lifetime, Small Brown Bike and Rites of Spring / Photo Credit for promo pic: @gigs_on_film
 `,
   videos: [
     "https://www.youtube.com/embed/Dqpsczu2c9o?si=AXfmxjliGKdcHTMu",
