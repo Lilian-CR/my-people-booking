@@ -23,7 +23,28 @@ Photo Credit for promo pic: Oyèmi Noize
     pressKit: "https://www.dropbox.com/scl/fo/ziuco518uqj1o17xe8s5f/h?rlkey=l5kwzfx9kk3vdahq8mta054rr&st=008qqard&dl=0",
     songkickId: "10266266",
   },
-
+{
+    id: 2,
+    name: “FUNERAL,
+    slug: “funeral”,
+    image: "/images/funeral.JPG”,
+    bio: `
+FFO: Title Fight, Basement, Lifetime, Small Brown Bike and Rites of Spring /
+Photo Credit for promo pic: @gigs_on_film
+`,
+    videos: [
+      "https://www.youtube.com/embed/Dqpsczu2c9o?si=AXfmxjliGKdcHTMu",
+      "https://www.youtube.com/embed/S2i-BoisWCA?si=Yn6sTiT_mQ0GeUsb",
+      "https://www.youtube.com/embed/CYGrpVeQOWQ?si=AamVIEtXpZcewC98",
+    ],
+    socials: {
+      instagram: "https://www.instagram.com/funeral.band",
+      facebook: "https://www.facebook.com/people/Funeral-band/61573748867553/",
+      bandcamp: "https://funeralband.bandcamp.com/",
+    },
+    pressKit: "https://www.dropbox.com/scl/fo/hlrjb93djz6b5b3x13e5u/AD-MopaYuNxIsONafOv-2Hg?rlkey=c6fztezqsxuk5l9sp6vajzj0y&st=dohosw1c&dl=0",
+    songkickId: "10266266",
+  },
   {
   id: 3,
   name: "TOMAR CONTROL",
