@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 const desktopRosterImages = [
   "/images/roster1.jpg",
   "/images/roster2.jpg",
+  "/images/roster3.jpg",
   "/images/roster4.jpg",
   "/images/roster5.jpg",
   "/images/roster6.jpg",
