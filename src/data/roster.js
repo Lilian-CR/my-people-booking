@@ -11,7 +11,7 @@ FFO: Gouge Away, Drug Church, Scowl /
 Photo Credit for promo pic: Oyèmi Noize
 `,
     videos: [
-      "https://www.youtube.com/embed/SL1Qd1AI5eE?si=zISQnByoij8yidCm",
+      "https://www.youtube.com/embed/pks9fLDh8c8?si=KWnfgBpV667Nkr6C",
       "https://www.youtube.com/embed/3L_ivyrFwMo?si=awetvWKu8_F1DJrL",
       "https://www.youtube.com/embed/LA47RfsGkOk?si=E1dU2o524JwL5Z5B",
     ],
