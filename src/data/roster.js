@@ -5,7 +5,7 @@ const roster = [
     id: 1,
     name: "NOTHING WORKS",
     slug: "nothing-works",
-    image: "/images/nothingxworks.jpg",
+    image: "/images/nothingxworks.png",
     bio: `
 FFO: Gouge Away, Drug Church, Scowl /
 Photo Credit for promo pic: Oyèmi Noize
