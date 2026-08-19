@@ -8,7 +8,7 @@ const roster = [
     image: "/images/nothingxworks.png",
     bio: `
 FFO: Gouge Away, Drug Church, Scowl /
-Photo Credit for promo pic: Oyèmi Noize
+Photo Credit for promo pic: Michelle Olaya
 `,
     videos: [
       "https://www.youtube.com/embed/K6oIUN22NN8?si=EZ0zb806UuX6ws5n",
