@@ -51,7 +51,7 @@ FFO: Title Fight, Basement, Lifetime, Small Brown Bike and Rites of Spring / Pho
   slug: "tomar-control",
   image: "/images/tomar-control.png",
   bio: `
-Coming Soon!
+Youth Crew, Old School hardcore.
 `,
   videos: [
     "https://www.youtube.com/embed/yHiRiy7EJfY?si=TtGz3xXVeSInVy7p",
@@ -74,7 +74,7 @@ Coming Soon!
   slug: "alieanation",
   image: "/images/alieanation.jpg",
   bio: `
-Coming Soon!
+Modetn metalcore.
 `,
   videos: [
     "https://www.youtube.com/embed/x1GZUcIf0CI?si=el3avUvtcW3VTcP4",
@@ -97,7 +97,7 @@ Coming Soon!
   slug: "aspero",
   image: "/images/AASPERØ.jpg",
   bio: `
-Coming Soon!
+Heavy mettalic hardcore. 
 `,
   videos: [
     "https://www.youtube.com/embed/pgO7IRQOd34?si=1HHXbJiIYnHAj2K-",
@@ -120,7 +120,7 @@ Coming Soon!
   slug: "derrumbando-defensas",
   image: "/images/derrumbando-defensas.jpg",
   bio: `
-Coming Soon!
+Metalic hardcore. 
 `,
   videos: [
     "https://www.youtube.com/embed/tQSldldcu1I?si=310zRG14QDNvjQq8",
@@ -143,7 +143,7 @@ Coming Soon!
   slug: "futuro",
   image: "/images/futuro.jpg",
   bio: `
-Coming Soon!
+New wave punk.
 `,
   videos: [
     "https://www.youtube.com/embed/7OTyQy3xLWE?si=ANtAcm87Qn4DFd9O",
@@ -166,7 +166,7 @@ Coming Soon!
   slug: "pacifist",
   image: "/images/pacifist.jpg",
   bio: `
-Coming Soon!
+FFO: Heavy Heart, Fiddlehead, At the Drive-In.
 `,
   videos: [
     "https://www.youtube.com/embed/0Pa4qIE_m1g?si=TSL-pmtUm7lGTYDZ",
@@ -189,7 +189,7 @@ Coming Soon!
   slug: "swiss-pleasure",
   image: "/images/swiss-pleasure.jpg",
   bio: `
-Coming Soon!
+Indie Jazz Stoner Shoegaze. 
 `,
   videos: [
     "https://www.youtube.com/embed/YacSGr9W-wQ?si=oWK8ZFviyvgtqxTn",
