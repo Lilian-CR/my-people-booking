@@ -47,7 +47,7 @@ export default function Contact() {
             }
           `}</style>
 
-          <div id="mc_embed_signup">
+          <div id="mc_embed_signup" style={{ margin: "0 auto" }}>
             <form
               action="https://mypeoplebooking.us21.list-manage.com/subscribe/post?u=f2f9b922ad945dd5169883f59&amp;id=f5f2be952d&amp;f_id=00c4f9e6f0"
               method="post"
@@ -446,18 +446,7 @@ export default function Contact() {
                             borderRadius: "4px"
                           }}
                         >
-                          <img
-                            className="refferal_badge"
-                            src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-light.svg"
-                            alt="Intuit Mailchimp"
-                            style={{
-                              width: "220px",
-                              height: "40px",
-                              display: "flex",
-                              padding: "2px 0px",
-                              justifyContent: "center",
-                              alignItems: "center"
-                            }}
+                        
                           />
                         </span>
                       </a>
