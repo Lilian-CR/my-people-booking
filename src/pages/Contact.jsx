@@ -433,21 +433,6 @@ export default function Contact() {
                       className="button"
                       value="Subscribe"
                     />
-
-                    <p style={{ margin: "0px auto" }}>
-                      <a
-                        href="http://eepurl.com/i05Cvk"
-                        title="Mailchimp - email marketing made easy and fun"
-                      >
-                        <span
-                          style={{
-                            display: "inline-block",
-                            backgroundColor: "black",
-                            borderRadius: "4px"
-                          }}
-                        >
-                        
-                          />
                         </span>
                       </a>
                     </p>
