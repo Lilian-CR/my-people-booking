@@ -28,7 +28,7 @@ export default function Contact() {
         <div id="mc_embed_shell">
       <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   <style type="text/css">
-        #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
 </style>
 <div id="mc_embed_signup">
     <form action="https://mypeoplebooking.us21.list-manage.com/subscribe/post?u=f2f9b922ad945dd5169883f59&amp;id=f5f2be952d&amp;f_id=00c4f9e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
