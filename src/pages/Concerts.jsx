@@ -32,7 +32,7 @@ export default function Concerts() {
             communities and supporting the city’s rich underground music
             culture. The initiative also responds to the struggles faced by
             small venues, which have been hit by rising costs and economic
-            downturns.
+            downturns. 
           </p>
 
           <p className="mb-4">
