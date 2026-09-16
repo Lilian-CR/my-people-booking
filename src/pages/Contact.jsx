@@ -433,6 +433,8 @@ export default function Contact() {
                       className="button"
                       value="Subscribe"
                     />
+                    </div>
+                </div>
                         </span>
                       </a>
                     </p>
