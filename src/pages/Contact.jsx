@@ -128,7 +128,7 @@ export default function Contact() {
                       name="COUNTRY"
                       id="mce-COUNTRY"
                       required
-                      defaultValue="USA"
+                      defaultValue="Austria"
                     >
                       <option value="Aaland Islands">Aaland Islands</option>
                       <option value="Afghanistan">Afghanistan</option>
