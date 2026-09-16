@@ -423,9 +423,8 @@ export default function Contact() {
                   />
                 </div>
 
-                <div className="optionalParent">
+                                <div className="optionalParent">
                   <div className="clear foot">
-
                     <input
                       type="submit"
                       name="subscribe"
@@ -433,12 +432,6 @@ export default function Contact() {
                       className="button"
                       value="Subscribe"
                     />
-                    </div>
-                </div>
-                        </span>
-                      </a>
-                    </p>
-
                   </div>
                 </div>
 
