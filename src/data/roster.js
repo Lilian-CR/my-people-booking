@@ -164,7 +164,7 @@ New wave punk.
   id: 8,
   name: "PACIFIST",
   slug: "pacifist",
-  image: "/images/pacifist.jpg",
+  image: "/images/Pacifist-IN.jpg",
   bio: `
 FFO: Heavy Heart, Fiddlehead, At the Drive-In.
 `,
