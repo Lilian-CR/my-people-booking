@@ -12,7 +12,7 @@ Photo Credit for promo pic: Michelle Olaya
 `,
     videos: [
       "https://www.youtube.com/embed/iHRZ0W2ZSlQ?si=_S0tvDVfwsEhCoDx",
-      "https://www.youtube.com/embed/LA47RfsGkOk?si=E1dU2o524JwL5Z5B",
+      "https://www.youtube.com/embed/6yfw1uZqVNw?is=i-e0jpD8lFAQnhIN",
       "https://www.youtube.com/embed/LA47RfsGkOk?si=E1dU2o524JwL5Z5B",
     ],
     socials: {
