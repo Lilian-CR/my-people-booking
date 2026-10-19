@@ -13,7 +13,7 @@ Photo Credit for promo pic: Michelle Olaya
     videos: [
       "https://www.youtube.com/embed/iHRZ0W2ZSlQ?si=_S0tvDVfwsEhCoDx",
       "https://www.youtube.com/embed/LA47RfsGkOk?si=E1dU2o524JwL5Z5B",
-      "https://www.youtube.com/embed/pks9fLDh8c8?si=zuwzU1SiEPGpS9Z0",
+      "https://www.youtube.com/embed/LA47RfsGkOk?si=E1dU2o524JwL5Z5B",
     ],
     socials: {
       instagram: "https://www.instagram.com/nothingworksbln",
